@@ -13,7 +13,7 @@ To get started, do the following steps:
 
 1) Use your terminal to install and start MySQL:
 
-   $ mysql-ctl start
+    mysql-ctl start
 
 2) Open index.php
 
