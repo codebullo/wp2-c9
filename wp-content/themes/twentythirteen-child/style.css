@@ -1,0 +1,286 @@
+/*
+ Theme Name:   Twenty Thirteen Child
+ Theme URI:    http://example.com/twenty-thirteen-child/
+ Description:  Twenty Thirteen Child Theme
+ Author:       Codebullo
+ Author URI:   http://soloaplicaciones.com
+ Template:     twentythirteen
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-thirteen-child
+*/
+@import url("../twentythirteen/style.css");
+@import url("header.css");
+
+/* 
+|--------------------------------------------
+| Aquí empieza la personalización de tu tema
+|--------------------------------------------
+*/
+
+
+/*
+|-------------------------------------------------------------------
+| Modificados el color de la barra superior que sobreescribe a la
+| plantilla padre que se encuentra en
+| twentyfourteen-child/wp-content/themes/twentyfourteen/style.css 8 
+|-------------------------------------------------------------------
+*/
+
+.site {
+  max-width: 100%;
+}
+.site-main {
+  top: 56px;
+}
+
+.sidebar-container {
+  background-color: red;
+}
+
+
+.fondoblanco {
+  
+  background:white;
+  z-index:100;
+}
+
+
+
+.fondoverde {
+background: #18bc9c;
+
+color: white;
+font-size: 25px;
+padding: 20px;
+  display: table;
+  width: 100%;
+}
+
+.fondoverde2 {
+  background: green;
+}
+
+
+
+@media (max-width: 643px) {
+ 
+  #content .entry-content{
+  padding: 0px;
+  }
+  
+  .logo{
+    font-size: 1.2em;
+    line-height: 3em;
+  }
+  
+}
+
+.entry-header, .entry-content, .entry-summary, .entry-meta {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+.hentry {
+  padding: 0;
+}
+
+
+.genericon:before, .menu-toggle:after, .featured-post:before, .date a:before, .entry-meta .author a:before, .format-audio .entry-content:before, .comments-link a:before, .tags-links a:first-child:before, .categories-links a:first-child:before, .edit-link a:before, .attachment .entry-title:before, .attachment-meta:before, .attachment-meta a:before, .comment-awaiting-moderation:before, .comment-reply-link:before, .comment-reply-login:before, .comment-reply-title small a:before, .bypostauthor > .comment-body .fn:before, .error404 .page-title:before {
+font: initial;
+}
+
+
+
+/* 
+|---------------------------
+|     PORTFOLIO
+|---------------------------
+*/
+
+h2{
+  text-align: center;
+}
+
+
+@media (min-width: 768px){
+.portfolio-item {
+ width: 33.3333%;
+   float: left;
+   position: relative;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+#portfolio .portfolio-item{
+   margin: 0 auto;
+   position: relative;
+   max-width: 400px;
+}
+
+.portfolio-item {
+   padding-left: 55px;
+   padding-right: 55px;
+}
+.about {
+  width: 90%;
+}
+
+}
+
+  
+
+
+
+#portfolio .portfolio-item .img-responsive{
+  display: block;
+  margin: 0px auto;
+  }
+
+.img-responsive{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#portfolio {
+  
+  max-width: 1220px;
+  position: relative;
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px){
+  
+  .izquierda, .derecha{ width: 43%;padding: 10px;}
+  
+  .izquierda{float:left;}
+  .derecha{float:right;}
+  
+  .about {
+  position:relative;
+  width: 60%;
+  margin: 0 auto;
+}
+}
+
+
+
+
+/*
+|----------------------------------
+|  BOTON DE MENU ANIMADO
+|---------------------------------- 
+*/
+
+#nav-container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin:-3em;
+}
+
+/*
+|---------------
+|  toggle-icon
+|---------------
+*/
+
+.toggle-icon {
+	display: block;
+	position: relative;
+	width: 100%;
+	margin: -2.2em auto 0 0.2em;
+	-webkit-transition: margin 600ms;
+	-moz-transition: margin 600ms;
+	transition: margin 600ms;
+	cursor: pointer;
+}
+
+.toggle-icon .bar {
+	display: block;
+	width: 3.8em;
+	height: 0.2em;
+	margin: 0.9em;
+	border-right: 3em solid #fff;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition-property: -webkit-transform, margin, border-right-color, box-shadow;
+	-moz-transition-property: -moz-transform, margin, border-right-color, box-shadow;
+	transition-property: transform, margin, border-right-color, box-shadow;
+	-webkit-transition-duration: 600ms;
+	-moz-transition-duration: 600ms;
+	transition-duration: 600ms;
+}
+	.toggle-icon .bar:nth-of-type(1) {
+		-webkit-transition: opacity 300ms;
+		-moz-transition: opacity 300ms;
+		transition: opacity 300ms;
+	}
+	.toggle-icon .bar:nth-of-type(2) {
+		-webkit-transform: rotate(-180deg);
+		-moz-transform: rotate(-180deg);
+		-ms-transform: rotate(-180deg);
+		-o-transform: rotate(-180deg);
+		transform: rotate(-180deg);
+	}
+
+/*
+|------------
+|  pushed
+|------------
+*/
+
+.pushed .toggle-icon {
+	margin: -3.2em 0 0 0.7em;
+}
+
+	.pushed .bar:nth-of-type(1) {
+		opacity: 0;
+	}
+
+	.pushed .bar:nth-of-type(2) {
+		margin-left: 1.4em;
+		-webkit-transform: rotate(-137deg) translateY(-1.5em);
+		-moz-transform: rotate(-137deg) translateY(-1.5em);
+		-ms-transform: rotate(-137deg) translateY(-1.5em);
+		-o-transform: rotate(-137deg) translateY(-1.5em);
+		transform: rotate(-137deg) translateY(-1.5em);
+	}
+
+	.pushed .bar:nth-of-type(3) {
+		margin-left: 0.5em;
+		-webkit-transform: rotate(-42deg);
+		-moz-transform: rotate(-42deg);
+		-ms-transform: rotate(-42deg);
+		-o-transform: rotate(-42deg);
+		transform: rotate(-42deg);
+	}
+
+
+.pushed .toggle-icon:hover .bar:nth-of-type(2) {
+	border-right-color: #e9b8b9;
+	box-shadow: 0.4em 0 0.6em 0.1em rgba(205,40,44,0.75);
+}
+.pushed .toggle-icon:hover .bar:nth-of-type(3) {
+	border-right-color: #ddf1da;
+	box-shadow: 0.4em 0 0.6em 0.1em rgba(83,228,68,0.65);
+}
+
+/* Botón del mapa de quienes somos*/
+
+boton{
+  
+}
+
+
+.map {
+ 
+border-radius: 50%;
+			box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, .3), inset 0px 4px 1px 1px;
+			width: 30%;
+			border: #18bc9c 10px solid;
+}
+
