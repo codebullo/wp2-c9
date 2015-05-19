@@ -13,6 +13,12 @@
 
 get_header(); ?>
 
+<?php 
+
+//get_search_form(); 
+
+?> 
+						
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 
@@ -27,7 +33,8 @@ get_header(); ?>
 						</div>
 						<?php endif; ?>
 
-					<!--	<h1 class="entry-title"><?php //the_title(); ?></h1> -->
+					<!-- <h1 class="entry-title"><?php the_title(); ?></h1> -->
+					
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">

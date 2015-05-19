@@ -1,0 +1,53 @@
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: black;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 500px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-slide {
+    background-size:contain;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+.gallery-top {
+    height: 80%;
+    width: 100%;
+    
+}
+.gallery-thumbs {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+.gallery-thumbs .swiper-slide {
+    width: 15%;
+    height: 100%;
+    opacity: 0.6;
+}
+.gallery-thumbs .swiper-slide-active {
+    opacity: 1;
+}
+
+a.enlace {
+    width: 300px;
+    height:60px;
+    display:none;
+    border: 1px solid red;
+    margin: 0 auto;
+    padding-top: 40px;
+
+    
+}

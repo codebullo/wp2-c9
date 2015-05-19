@@ -1,0 +1,80 @@
+
+@media (min-width: 1200px){
+  
+
+  
+  .izquierda, .derecha{ width: 43%;padding: 10px;}
+  
+  .izquierda{float:left;}
+  .derecha{float:right;}
+  
+  .about {
+  position:relative;
+  width: 60%;
+  margin: 0 auto;
+  
+}
+}
+
+
+
+@media (min-width: 768px){
+
+
+.about {
+  width: 90%;
+}
+
+}
+
+
+
+
+
+
+@media (max-width: 2000px){
+
+
+.portfolio-item{
+  max-width: 30%;
+}
+
+
+}
+
+
+
+@media (max-width: 900px){
+
+
+.portfolio-item{
+  max-width: 45%;
+}
+
+
+}
+
+
+
+
+
+
+
+@media (max-width: 643px) {
+ 
+  #content .entry-content{
+  padding: 0px;
+  }
+  
+  .logo{
+   font-size: 14pt;
+  line-height: 3.6em;
+  }
+  
+  .portfolio-item{
+
+  max-width: 80%;
+}
+}
+
+
